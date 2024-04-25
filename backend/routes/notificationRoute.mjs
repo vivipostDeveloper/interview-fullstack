@@ -1,7 +1,8 @@
 import { Router } from 'express';
 
 // Database pool
-import pool from '../db/db.mjs';
+import { pool, poolPromise } from '../db/db.mjs';
+// You are free to use the pool you are more comfortable with
 
 // Time formatter
 import TimeAgo from 'javascript-time-ago';
@@ -13,7 +14,7 @@ const router = Router();
 
 router.get('/', async (req, res) => {
     try {
-        // Get notifications from database (Library: mysql2/promise)
+        // Use pool to get notifications from database (Library: mysql2)
 
 
         // Format date (Library: javascript-time-ago)

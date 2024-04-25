@@ -25,7 +25,7 @@ Created and Tested with Node v20.11.0
 
 1. Prepare the development environment with the previous Installation instructions.
 
-2. Create the Notifications component following the design guidelines from the [Figma document](https://www.figma.com/file/NvsMEA7oScw1a071rTzBjf/INTERVIEW-NOTIFICATIONS?type=design&node-id=0%3A1&mode=design&t=hhaWHD1YUF5hI7GS-1).
+2. Create the Notifications component following the design guidelines from the [Figma document](https://www.figma.com/file/NvsMEA7oScw1a071rTzBjf/INTERVIEW-NOTIFICATIONS?type=design&node-id=0%3A1&mode=design&t=hhaWHD1YUF5hI7GS-1). Try to replicate the design as close as possible without using frontend libraries (Tailwind CSS is allowed but not required). All icons are available in the /resources/assets folder.
 
 3. Complete the REST endpoint in *backend/routes/notificationRoute.mjs* to retrieve the notifications.
 

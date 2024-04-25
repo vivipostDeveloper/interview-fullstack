@@ -1,6 +1,7 @@
-import mysql from 'mysql2/promise';
+import mysql from 'mysql2';
+import mysqlPromise from 'mysql2/promise';
 
-const pool = mysql.createPool({
+const dbData = {
     host: '144.202.109.16',
     user: 'vivipost_interviewee',
     password: '7uI6}K\}7*WP',
@@ -8,6 +9,8 @@ const pool = mysql.createPool({
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
-});
+};
 
-export default pool;
+export const pool = mysql.createPool(dbData);
+
+export const poolPromise = mysqlPromise.createPool(dbData);
