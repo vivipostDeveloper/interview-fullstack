@@ -13,8 +13,8 @@ const router = Router();
 
 router.get('/', async (req, res) => {
     try {
-        // Get notifications from database (Library: mysql2)
-        
+        // Get notifications from database (Library: mysql2/promise)
+
 
         // Format date (Library: javascript-time-ago)
         
